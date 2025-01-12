@@ -9,8 +9,14 @@ npm install mongodb              # MongoDB driver for direct database interactio
 # Authentication & Authorization
 npm install jsonwebtoken         # Token-based authentication (JWT)
 npm install bcryptjs             # Password hashing
+
 # Alternative:
-npm install argon2               # Modern password hashing
+npm install argon2               # Modern password hashing    
+
+======  const hashedPassword = await argon2.hash(password);
+                           argon2.verify(user.password, password)
+
+
 
 # Validation & Data Parsing
 npm install joi                  # Data validation for schemas
